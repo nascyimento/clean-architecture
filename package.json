@@ -14,7 +14,9 @@
 	},
 	"scripts": {
 		"test": "npm run tsc -- --noEmit && jest",
-		"tsc": "tsc"
+		"tsc": "tsc",
+		"docker:build": "docker build -t clean-architecture-app .",
+		"docker:test": "docker run -p 3000:3000 clean-architecture-app"
 	},
 	"dependencies": {
 		"@types/cors": "^2.8.19",
