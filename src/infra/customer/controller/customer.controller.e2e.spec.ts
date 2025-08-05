@@ -110,7 +110,7 @@ describe("Customer Controller E2E Tests", () => {
                 .expect(400);
 
             expect(response.body).toEqual({
-                error: "Name is required"
+                error: "customer: Name is required"
             });
         });
 
@@ -450,7 +450,7 @@ describe("Customer Controller E2E Tests", () => {
                 .expect(400);
 
             expect(response.body).toEqual({
-                error: "Name is required"
+                error: "customer: Name is required"
             });
         });
 

@@ -4,12 +4,17 @@ import Address from "../value-object/address";
 describe("Customer unit tests", () => {
 	it("should throw error when id is empty", () => {
 		expect(() => new Customer("", "John"))
-			.toThrowError('Id is required');
+			.toThrowError('customer: Id is required');
 	});
 
 	it("should throw error when name is empty", () => {
 		expect(() => new Customer("1", ""))
-			.toThrowError('Name is required');
+			.toThrowError('customer: Name is required');
+	});
+
+	it("should throw error when id and name are empty", () => {
+		expect(() => new Customer("", ""))
+			.toThrowError('customer: Id is required, customer: Name is required');
 	});
 
 	it("should change name", () => {
@@ -21,7 +26,7 @@ describe("Customer unit tests", () => {
 	it("should not change name when empty", () => {
 		const customer = new Customer("1", "John");
 		expect(() => customer.changeName(""))
-			.toThrowError('Name is required');
+			.toThrowError('customer: Name is required');
 	});
 
 	it("should activate customer", () => {
