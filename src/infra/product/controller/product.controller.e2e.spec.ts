@@ -92,7 +92,7 @@ describe("Product Controller E2E Tests", () => {
                 .expect(400);
 
             expect(response.body).toEqual({
-                error: "Name is required"
+                error: "product: Name is required"
             });
         });
 
@@ -108,7 +108,7 @@ describe("Product Controller E2E Tests", () => {
                 .expect(400);
 
             expect(response.body).toEqual({
-                error: "Price is required and must be greater than 0"
+                error: "product: Price is required and must be greater than 0"
             });
         });
 
@@ -124,7 +124,7 @@ describe("Product Controller E2E Tests", () => {
                 .expect(400);
 
             expect(response.body).toEqual({
-                error: "Price is required and must be greater than 0"
+                error: "product: Price is required and must be greater than 0"
             });
         });
 
@@ -350,7 +350,7 @@ describe("Product Controller E2E Tests", () => {
                 .expect(400);
 
             expect(response.body).toEqual({
-                error: "Name is required"
+                error: "product: Name is required"
             });
         });
 
@@ -380,7 +380,7 @@ describe("Product Controller E2E Tests", () => {
                 .expect(400);
 
             expect(response.body).toEqual({
-                error: "Price is required and must be greater than 0"
+                error: "product: Price is required and must be greater than 0"
             });
         });
 
@@ -410,7 +410,7 @@ describe("Product Controller E2E Tests", () => {
                 .expect(400);
 
             expect(response.body).toEqual({
-                error: "Price is required and must be greater than 0"
+                error: "product: Price is required and must be greater than 0"
             });
         });
 
